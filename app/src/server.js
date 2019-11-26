@@ -1,14 +1,14 @@
 import express from "express";
 import { ApolloServer } from "apollo-server-express";
 
-import schema from "./schemas";
-import resolvers from "./resolvers";
+import { typeDefs, resolvers } from "./schema";
+//import resolvers from "./resolvers";
 
 function gqlServer() {
   const app = express();
 
   const apolloServer = new ApolloServer({
-    typeDefs: schema,
+    typeDefs,
     resolvers,
     // Enable graphiql gui
     introspection: true,
