@@ -1,10 +1,10 @@
 import express from "express";
 import { ApolloServer } from "apollo-server-express";
 
-import { typeDefs, resolvers } from "./schema";
-//import resolvers from "./resolvers";
+import typeDefs from "./typeDefs";
+import resolvers from "./resolvers";
 
-function gqlServer() {
+function createServer() {
   const app = express();
 
   const apolloServer = new ApolloServer({
@@ -20,4 +20,4 @@ function gqlServer() {
   return app;
 }
 
-export default gqlServer;
+export default createServer;

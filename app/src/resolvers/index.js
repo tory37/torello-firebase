@@ -1,7 +1,5 @@
-const resolverFunctions = {
-  Query: {
-    hello: () => "world"
-  }
-};
+import merge from "lodash.merge";
 
-export default resolverFunctions;
+import board from "./board.resolver";
+
+export default merge(board);

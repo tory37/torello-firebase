@@ -1,4 +1,4 @@
-import Board from "./board.model";
+import Board from "../models/board.model";
 
 export default {
   Query: {

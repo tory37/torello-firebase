@@ -1,12 +1,12 @@
 import { https } from "firebase-functions";
-import gqlServer from "./src/server";
+import createServer from "./src/server";
 //const cors = require("cors");
 
 // The Firebase Admin SDK to access the Firebase Realtime Database.
 const admin = require("firebase-admin");
 admin.initializeApp();
 
-const server = gqlServer();
+const server = createServer();
 
 //app.use(cors({ origin: true }));
 
