@@ -18,5 +18,8 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "rimraf": "^3.0.0"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.4"
   }
 }
